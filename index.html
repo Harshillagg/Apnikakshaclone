@@ -4,51 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>Apni Kaksha | Home</title>
-    <link rel="stylesheet" href="file/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Apni Kaksha</h1>
+        <div class="header" id="home"></div>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">College Reviews</a>
-        <a href="#">Courses</a>
-        <a href="#">Study Materials</a>
-        <a href="#">Login/SignUp</a>
+            <a href="#home" class="border">Home</a>
+            <a href="#courses" class="border">Courses</a>
+            <a href="#college" class="border">College Reviews</a>
+            <a href="#material" class="border">Study Materials</a>
+            <a href="#" class="border login">Login/SignUp</a>
     </nav>
-    <main>
-        <section>
-            <h2>Courses</h2>
-            <video src="video/electrochemistry.mp4" width="33%" poster="img/electrochemistry.jpg" controls></video>
-            <video src="video/html.m4v" width="33%" poster="img/webdev.png" controls></video>
-            <video src="video/maths.mp4" width="33%" poster="img/maths.jpg" controls></video>
-            <br>
-            <br>
-            <br>
-            <video src="video/Electrochemistry Lecture 3.mp4" width="33%" poster="img/electrochemistry l3.jpg" controls></video>
-            <video src="video/cpp.mp4" width="33%" poster="img/cpp.jpg" controls></video>
-            <video src="video/maths2.mp4" width="33%" poster="img/maths2.jpg" controls></video>
-        </section>
-        <section>
-            <h2>College Reviews</h2>
-            <iframe width="33%" height="75%" src="https://www.youtube.com/embed/1VfqlKtVF7U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="33%" height="75%" src="https://www.youtube.com/embed/zGJ5BlbKfLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="33%" height="75%" src="https://www.youtube.com/embed/j0biLzzJ2XQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-        <section>
-            <h2>Study Material</h2>
-            <a target="_blank" href="Notes/Surface Chemistry  Complete NCERT.pdf"><img src="Notes/Surface Chemistry  Complete NCERT_pages-to-jpg-0001.jpg" alt="" width="24%" height="60%"></a>
-            <a target="_blank" href="Notes/Solid State New Complete Chapter Notes.pdf"><img src="Notes/Solid State New Complete Chapter Notes-01.jpg" alt="" width="24%" height="60%"></a>
-            <a target="_blank" href="Notes/Electrochemistry  Complete NCERT.pdf"><img src="Notes/Electrochemistry  Complete NCERT-01.jpg" alt="" width="24%" height="60%"></a>
-            <a target="_blank" href="Notes/Coordination Compound 3.pdf"><img src="Notes/Coordination Compound 3-page-001 (1).jpg" alt="" width="24%" height="60%"></a>
-        </section>
-        <section>
-            <h2>
+    <main class="mainbody">
+        <div class="divs">
+            <h2 id="courses" class="head">Courses</h2>  
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell">
+                    <video src="./assets/Electrochemistry Lecture 3.mp4" poster="./assets/electrochemistry.jpg" controls></video>
+                </div>
+                <div class="carousel-cell">
+                    <video src="./assets/Electrochemistry Lecture 3.mp4" poster="./assets/cpp.jpg" controls></video>
+                </div>
+                <div class="carousel-cell">
+                    <video src="./assets/Electrochemistry Lecture 3.mp4" poster="./assets/maths.jpg" controls></video>
+                </div>
+                <div class="carousel-cell">
+                    <video src="./assets/Electrochemistry Lecture 3.mp4" poster="./assets/electrochemistry.jpg" controls></video>
+                </div>
+                <div class="carousel-cell">
+                    <video src="./assets/Electrochemistry Lecture 3.mp4" poster="./assets/maths.jpg" controls></video>
+                </div>
+            </div>            
+        </div>
+        <div class="divs">
+            <h2 id="college" class="head">College Reviews</h2>
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell iframe-container"><iframe src="https://www.youtube.com/embed/1VfqlKtVF7U"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="carousel-cell iframe-container"><iframe src="https://www.youtube.com/embed/zGJ5BlbKfLM"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="carousel-cell iframe-container"><iframe src="https://www.youtube.com/embed/j0biLzzJ2XQ"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="divs">
+            <h2 id="material" class="head">Study Material</h2>
+        </div>
+        <div class="divs">
+            <h2 class="head">
                 Our Founder
             </h2>
-            <img src="img/aman.jpeg" alt="This is Aman Dhattarwal">
+            <img src="./assets/logo-aman.jpeg" alt="This is Aman Dhattarwal">
             <h3>Aman Dhattarwal</h3>
             <a href="http://www.youtube.com/amandhattarwal" target="_blank" rel="noopener noreferrer">YouTube</a>&nbsp;&nbsp;|&nbsp;&nbsp;
             <a href="http://www.linkedin.com/in/dhattarwalaman" target="_blank" rel="noopener noreferrer">LinkedIn</a>&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -58,7 +78,7 @@
             <h5>I help students across India find their right career path. I have been a guest speaker at 22 Colleges including Top IITs, BITS Pilani, IIIT's, NIT's, SRCC, Jadavpur University etc. I am the #1 Educator of JEE on India's biggest online platform
                 and I believe that everyone has the right to quality education and with the help of my social media platforms, I have helped millions of students find their path to success in the last 5 years. In the next few decades, India will rise
                 as the leader of the world with the maximum young workforce, but for this, we need some good pilots who can take us through this. I help these young hustlers find their true potential so that they can fly us to victory.</h5>
-        </section>
+        </div>
     </main>
     
     <footer>
@@ -69,5 +89,9 @@
         <a href="#">Refund Policy</a>
         <a href="#">&copy; 2023 | Apni Kaksha</a>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 </body>
 </html>
