@@ -25,7 +25,6 @@ body {
 .head{
     background-image: linear-gradient(to right, #f5d837, #bbb812);
     display : inline-block;
-    margin : 40px;
     padding: 6px 40px;
     border: 1px solid black;
     border-radius: 20px;
@@ -53,7 +52,6 @@ nav a {
 }
 
 .border:hover{
-    border: 1px solid black;
     border-radius: 4rem;
     background-color: white;
     color: black;
@@ -70,10 +68,6 @@ main {
 }
 
 video {
-    padding: 10px;
-}
-
-img {
     padding: 10px;
 }
 
@@ -97,21 +91,6 @@ footer a {
     border-radius: 5px;
 }
 
-.iframe-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
-}
-  
-.iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 0;
-    height: 60%;
-    width: 100%;
-}
-
 @media screen and (max-width : 570px){
     nav {
         flex-direction: column;
@@ -120,4 +99,20 @@ footer a {
     .login{
         margin-right: auto;
     }
+}
+
+.founder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.2rem;
+    gap: 1rem;
+    background-color: #dacccce9;
+}
+
+.divs{
+    padding-top: 20px;
 }
